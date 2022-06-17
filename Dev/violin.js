@@ -94,8 +94,8 @@
                 return d.group
             })
             .rollup(function(r) {
-              input = r.map(function(g) { return g.value;})    // Keep the variable called Sepal_Length
-              bins = binsGenerator(input)   // And compute the binning on it.
+              input = r.map(function(g) { return g.value;})   
+              bins = binsGenerator(input)  
               return(bins)
             })
             .entries(data_ready)
